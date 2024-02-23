@@ -1,6 +1,7 @@
 package com.converter.length;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class LengthConverterTest {
 
@@ -16,6 +17,19 @@ class LengthConverterTest {
         //testing for conversion of 10 feets to meters
         double expectedOutput = 3.047999902464003;
         assertEquals(expectedOutput, LengthConverter.convertFeetToMeters(10));
+    }
+
+    @org.junit.jupiter.api.Test
+    void convertFalseFeetToMeters() {
+        //testing for conversion of 10 feets to meters
+        double expectedOutput = 20;
+        assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(10));
+    }
+    @org.junit.jupiter.api.Test
+    void convertNegativeFeetToMeters() {
+        //testing for conversion of 10 feets to meters
+        double expectedOutput = 3.047999902464003;
+        assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(-7));
     }
 
     @org.junit.jupiter.api.Test
