@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage("SCM Checkout"){
+                steps{
+                git 'https://github.com/enoch-aik/pa_2552_project.git' 
+                }
+            }
         stage("Maven Build"){
             steps{
                 bat 'mvn clean package'
