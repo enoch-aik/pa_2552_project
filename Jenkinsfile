@@ -1,28 +1,29 @@
-pipeline {
+pipeline{
     agent any
-    options {
-        skipStagesAfterUnstable()
+    tools{
+        maven 'Maven'
     }
-    stages {
-        stage('Build') {
-            steps {
-                sh 'mvn -B -DskipTests clean package'
+    stages{
+        stage("SCM Checkout"){
+            steps{
+            git 'https://github.com/enoch-aik/pa_2552_project.git'
+            }
+        }
+        stage("Maven Build"){
+            steps{
+                bat 'mvn clean package'
             }
         }
         stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
-                }
-            }
-        }
-        stage('Deliver') {
-            steps {
-                sh './jenkins/scripts/deliver.sh'
-            }
+                    steps {
+                        bat 'mvn test'
+                    }
+                    post {
+                        always {
+                            junit 'target/surefire-reports/*.xml'
+                        }
+                    }
         }
     }
 }
+
