@@ -28,7 +28,7 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertNegativeFeetToMeters() {
         //testing for conversion of 10 feets to meters
-        double expectedOutput = 25;
+        double expectedOutput = 20;
         assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(-7));
     }
 
