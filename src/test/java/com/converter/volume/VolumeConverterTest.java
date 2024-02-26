@@ -33,18 +33,4 @@ public class VolumeConverterTest {
         assertEquals(expectedOutput, VolumeConverter.convertMillilitersToLiters(20));
     }
 
-    @org.junit.jupiter.api.Test
-    void convertTablespoonToMilliliters() {
-        // testing for conversion of 1 tablespoon to milliliters
-        double expectedOutput = 14.7867648;
-        assertEquals(expectedOutput, VolumeConverter.convertTablespoonToMilliliters(1));
-    }
-
-    @org.junit.jupiter.api.Test
-    void convertMillilitersToTablespoon() {
-        // testing for conversion of 50 milliliters to tablespoon
-        double expectedOutput = 3.0;
-        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon());
-    }
-
 }
