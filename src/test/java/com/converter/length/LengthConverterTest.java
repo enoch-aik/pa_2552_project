@@ -21,20 +21,20 @@ class LengthConverterTest {
 
     @org.junit.jupiter.api.Test
     void convertFeetToMeters() {
-        //testing for conversion of 10 feets to meters
+        //testing for conversion of 10 feet to meters
         double expectedOutput = 3.047999902464003;
         assertEquals(expectedOutput, LengthConverter.convertFeetToMeters(10));
     }
 
     @org.junit.jupiter.api.Test
     void convertFalseFeetToMeters() {
-        //testing for conversion of 10 feets to meters
+        //testing for conversion of 10 feet to meters
         double expectedOutput = 20;
         assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(10));
     }
     @org.junit.jupiter.api.Test
     void convertNegativeFeetToMeters() {
-        //testing for conversion of 10 feets to meters
+        //testing for conversion of 10 feet to meters
         double expectedOutput = 20;
         assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(-7));
     }
@@ -63,7 +63,7 @@ class LengthConverterTest {
     }
 
     @org.junit.jupiter.api.Test
-    void convertFlaseInchesToMeters() {
+    void convertFalseInchesToMeters() {
         //testing for conversion of 10 inches to meters
         double expectedOutput = 0.123456;
         assertNotEquals(expectedOutput, LengthConverter.convertInchesToMeters(25));
