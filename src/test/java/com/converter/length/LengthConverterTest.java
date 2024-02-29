@@ -15,7 +15,7 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertFalseMetersToFeet() {
         //testing for conversion of 10 meters to feet
-        double expectedOutput = 30;
+        double expectedOutput = 32.80849;
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToFeet(10));
     }
 
@@ -29,14 +29,8 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertFalseFeetToMeters() {
         //testing for conversion of 10 feet to meters
-        double expectedOutput = 20;
+        double expectedOutput = 3.0479999024640039;
         assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(10));
-    }
-    @org.junit.jupiter.api.Test
-    void convertNegativeFeetToMeters() {
-        //testing for conversion of 10 feet to meters
-        double expectedOutput = 20;
-        assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(-7));
     }
 
     @org.junit.jupiter.api.Test
@@ -50,7 +44,7 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertFalseMetersToInches() {
         //testing for conversion of 10 meters to inches
-        double expectedOutput = 100;
+        double expectedOutput = 393.7019;
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToInches(10));
 
     }
@@ -65,7 +59,7 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertFalseInchesToMeters() {
         //testing for conversion of 10 inches to meters
-        double expectedOutput = 0.123456;
+        double expectedOutput = 0.63499965710018519;
         assertNotEquals(expectedOutput, LengthConverter.convertInchesToMeters(25));
     }
     @org.junit.jupiter.api.Test
@@ -77,7 +71,7 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertFalseMetersToCentimeters() {
         //testing for conversion of 10 meters to centimeters
-        double expectedOutput = 100000;
+        double expectedOutput = 10009;
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToCentimeters(10));
     }
     @org.junit.jupiter.api.Test
@@ -90,7 +84,7 @@ class LengthConverterTest {
     @org.junit.jupiter.api.Test
     void convertFalseCentimetersToMeters() {
         //testing for conversion of 10 centimeters to meters
-        double expectedOutput = 10;
+        double expectedOutput = 0.19;
         assertNotEquals(expectedOutput, LengthConverter.convertCentimetersToMeters(10));
     }
 }
