@@ -102,7 +102,7 @@ public class ConverterUserInterface {
     }
 
     private static String selectCategory() {
-        return JOptionPane.showInputDialog(null, "Hello!\nWhat do you want to convert?\n\n\n", "Unit Converter", JOptionPane.QUESTION_MESSAGE, null, com.converter.constants.ConverterConstants.converterCategories, "Length").toString();
+        return JOptionPane.showInputDialog(null, "Hello!\nWhat would you want to convert?\n\n\n", "Unit Converter", JOptionPane.QUESTION_MESSAGE, null, com.converter.constants.ConverterConstants.converterCategories, "Length").toString();
 
     }
 
@@ -112,6 +112,7 @@ public class ConverterUserInterface {
             case "Length" -> ConverterCategories.Length;
             case "Temperature" -> ConverterCategories.Temperature;
             case "Weight" -> ConverterCategories.Weight;
+            case "Volume" -> ConverterCategories.Volume;
             default -> null;
         };
     }
