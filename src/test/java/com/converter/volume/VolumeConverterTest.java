@@ -9,7 +9,7 @@ public class VolumeConverterTest {
     void convertLitersToGallon() {
         // testing for conversion of 20 liters to gallon
         double expectedOutput = 5.28344105;
-        assertEquals(expectedOutput, VolumeConverter.convertLiterstoGallon(20));
+        assertEquals(expectedOutput, VolumeConverter.convertLitersToGallon(20));
     }
 
     @org.junit.jupiter.api.Test
@@ -44,7 +44,7 @@ public class VolumeConverterTest {
     void convertMillilitersToTablespoon() {
         // testing for conversion of 50 milliliters to tablespoon
         double expectedOutput = 3.0;
-        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon());
+        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon(50));
     }
 
 }
