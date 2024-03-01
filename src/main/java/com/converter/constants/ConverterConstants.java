@@ -12,8 +12,10 @@ public class ConverterConstants {
 
     public static final String[] converterCategories = new String[]{"Length", "Temperature", "Weight", "Volume"};
 
-    public static final String[] lengthConverterCategory = new String[]{"Meter to Feet", "Feet to Meter", "Meter to Inch", "Inches to Meter", "Meter to Centimeter","Centimeter to Meter"};
-
+    public static final String[] lengthConverterCategory = new String[]{"Meter to Feet", "Feet to Meter", "Meter to Inch", "Inch to Meter", "Meter to Centimeter", "Centimeter to Meter"};
+    public static final String[] weightConverterCategory = new String[]{"Kilogram to Pound", "Pound to Kilogram", "Kilogram to Gram", "Gram to Kilogram", "Pound to Gram", "Gram to Pound"};
+    public static final String[] temperatureConverterCategory = new String[]{"Celsius to Fahrenheit", "Fahrenheit to Celsius", "Celsius to Kelvin", "Kelvin to Celsius", "Fahrenheit to Kelvin", "Kelvin to Fahrenheit"};
+    public static final String[] volumeConverterCategory = new String[]{"Liter to Gallon", "Gallon to Liter", "Liter to Milliliter", "Milliliter to Liter", "Tablespoon to Milliliter", "Milliliter to Tablespoon"};
 
 
 }
