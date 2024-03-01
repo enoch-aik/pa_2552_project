@@ -26,12 +26,4 @@ public class VolumeConverter {
         return milliliters / ConverterConstants.LITER_MILLILITER_UNIT;
     }
 
-    // convert tablespoon to milliliters
-    public static double convertTablespoonToMilliliters(double tablespoon) {
-        return tablespoon * ConverterConstants.MILLILITER_TABLESPOON_UNIT;
-    }
-
-    //convert milliliters to tablespoon
-    public static double convertMillilitersToTablespoon(double milliliters) { return round(milliliters / ConverterConstants.MILLILITER_TABLESPOON_UNIT); }
-
 }
