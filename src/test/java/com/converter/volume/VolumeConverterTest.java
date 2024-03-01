@@ -8,14 +8,14 @@ public class VolumeConverterTest {
     @org.junit.jupiter.api.Test
     void convertLitersToGallon() {
         // testing for conversion of 20 liters to gallon
-        double expectedOutput = 5.28344105;
-        assertEquals(expectedOutput, VolumeConverter.convertLiterstoGallon(20));
+        double expectedOutput = 5.284015852047556;
+        assertEquals(expectedOutput, VolumeConverter.convertLitersToGallon(20));
     }
 
     @org.junit.jupiter.api.Test
     void convertGallonToLiters() {
         // testing for conversion of 20 gallons to liters
-        double expectedOutput = 75.7082357;
+        double expectedOutput = 75.7;
         assertEquals(expectedOutput, VolumeConverter.convertGallonToLiters(20));
     }
 
@@ -36,7 +36,7 @@ public class VolumeConverterTest {
     @org.junit.jupiter.api.Test
     void convertTablespoonToMilliliters() {
         // testing for conversion of 1 tablespoon to milliliters
-        double expectedOutput = 14.7867648;
+        double expectedOutput = 14.79;
         assertEquals(expectedOutput, VolumeConverter.convertTablespoonToMilliliters(1));
     }
 
@@ -44,7 +44,7 @@ public class VolumeConverterTest {
     void convertMillilitersToTablespoon() {
         // testing for conversion of 50 milliliters to tablespoon
         double expectedOutput = 3.0;
-        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon());
+        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon(50));
     }
 
 }

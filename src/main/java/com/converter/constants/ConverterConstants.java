@@ -12,7 +12,8 @@ public class ConverterConstants {
     public static final double KILOGRAM_POUND_UNIT = 2.20462;
     public static final double KILOGRAM_GRAM_UNIT = 1000;
     public static final double POUND_GRAM_UNIT = 453.592;
-
-
+    public static final double LITER_GALLON_UNIT = 3.785;
+    public static final double LITER_MILLILITER_UNIT = 1000;
+    public static final double MILLILITER_TABLESPOON_UNIT = 14.79;
 
 }
