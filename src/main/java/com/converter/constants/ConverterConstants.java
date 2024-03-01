@@ -10,6 +10,10 @@ public class ConverterConstants {
     public static final double KILOGRAM_GRAM_UNIT = 1000;
     public static final double POUND_GRAM_UNIT = 453.592;
 
+    public static final String[] converterCategories = new String[]{"Length", "Temperature", "Weight", "Volume"};
+
+    public static final String[] lengthConverterCategory = new String[]{"Meter to Feet", "Feet to Meter", "Meter to Inch", "Inches to Meter", "Meter to Centimeter","Centimeter to Meter"};
+
 
 
 }
