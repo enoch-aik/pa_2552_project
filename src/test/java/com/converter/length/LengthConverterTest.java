@@ -7,96 +7,120 @@ class LengthConverterTest {
 
     @org.junit.jupiter.api.Test
     void convertMetersToFeet() {
-        //testing for conversion of 10 meters to feet
+        // test input in meters
         double testInput = 10;
+        // expected output in feet
         double expectedOutput = 32.8084;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, LengthConverter.convertMetersToFeet(testInput));
     }
 
     @org.junit.jupiter.api.Test
     void convertFalseMetersToFeet() {
-        //testing for conversion of 10 meters to feet
+        // test input in meters
         double testInput = 10;
+        // expected output in feet
         double expectedOutput = 323;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToFeet(testInput));
     }
 
     @org.junit.jupiter.api.Test
     void convertFeetToMeters() {
-        //testing for conversion of 10 feet to meters
+        // test input in feet
         double testInput = 10;
+        // expected out in meters
         double expectedOutput = 3.047999902464003;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, LengthConverter.convertFeetToMeters(testInput));
     }
 
     @org.junit.jupiter.api.Test
     void convertFalseFeetToMeters() {
-        //testing for conversion of 10 feet to meters
+        // test input in feet
         double testInput = 10;
+        // expected output in meters
         double expectedOutput = 3;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertFeetToMeters(testInput));
     }
 
     @org.junit.jupiter.api.Test
     void convertMetersToInches() {
-        //testing for conversion of 10 meters to inches
+        // test input in meters
         double testInput = 10;
+        // expected output in inches
         double expectedOutput = 393.701;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, LengthConverter.convertMetersToInches(testInput));
 
     }
 
     @org.junit.jupiter.api.Test
     void convertFalseMetersToInches() {
-        //testing for conversion of 10 meters to inches
+        // test input in meters
         double testInput = 10;
+        // expected output in inches
         double expectedOutput = 500;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToInches(testInput));
 
     }
 
     @org.junit.jupiter.api.Test
     void convertInchesToMeters() {
-        //testing for conversion of 10 inches to meters
+        // test input in inches
         double testInput = 25;
+        // expected output in meters
         double expectedOutput = 0.6349996571001851;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, LengthConverter.convertInchesToMeters(testInput));
     }
 
     @org.junit.jupiter.api.Test
     void convertFalseInchesToMeters() {
-        //testing for conversion of 10 inches to meters
+        // test input in inches
         double testInput = 25;
+        // expected output in meters
         double expectedOutput = 10;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertInchesToMeters(testInput));
     }
     @org.junit.jupiter.api.Test
     void convertMetersToCentimeters() {
-        //testing for conversion of 10 meters to centimeters
+        // test input in meters
         double testInput = 10;
+        // expected output in centimeters
         double expectedOutput = 1000;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, LengthConverter.convertMetersToCentimeters(testInput));
     }
     @org.junit.jupiter.api.Test
     void convertFalseMetersToCentimeters() {
-        //testing for conversion of 10 meters to centimeters
+        // test input in meters
         double testInput = 10;
+        // expected output in centimeters
         double expectedOutput = 100;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToCentimeters(testInput));
     }
     @org.junit.jupiter.api.Test
     void convertCentimetersToMeters() {
-        //testing for conversion of 10 centimeters to meters
+        // test input in centimeters
         double testInput = 10;
+        // expected output in meters
         double expectedOutput = 0.1;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, LengthConverter.convertCentimetersToMeters(testInput));
     }
 
     @org.junit.jupiter.api.Test
     void convertFalseCentimetersToMeters() {
-        //testing for conversion of 10 centimeters to meters
+        // test input in centimeters
         double testInput = 10;
+        // expected output in meters
         double expectedOutput = 1;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertCentimetersToMeters(testInput));
     }
 }

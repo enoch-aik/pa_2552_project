@@ -15,7 +15,7 @@ class IntegrationTest {
         //expected output value in centimeters
         double expectedOutput = 25.399986284007408;
         //assertion to check if the expected output and the actual output are same
-        assertEquals(LengthConverter.convertMetersToCentimeters(LengthConverter.convertInchesToMeters(testInput)), expectedOutput);
+        assertEquals(expectedOutput, LengthConverter.convertMetersToCentimeters(LengthConverter.convertInchesToMeters(testInput)));
     }
 
     //test to convert feet to inches
@@ -26,7 +26,7 @@ class IntegrationTest {
         //expected output value in inches
         double expectedOutput = 120.00006095999805;
         //assertion to check if the expected output and the actual output are same
-        assertEquals(LengthConverter.convertMetersToInches(LengthConverter.convertFeetToMeters(testInput)), expectedOutput);
+        assertEquals(expectedOutput, LengthConverter.convertMetersToInches(LengthConverter.convertFeetToMeters(testInput)));
     }
 
 }

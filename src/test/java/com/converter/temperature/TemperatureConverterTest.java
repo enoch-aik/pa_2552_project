@@ -8,96 +8,120 @@ class TemperatureConverterTest {
 
     @Test
     void convertCelsiusToFahrenheit() {
-        // testing for 10 Celsius to Fahrenheit
+        // test input in Celsius
         double testInput = 10;
+        // expected output in Fahrenheit
         double expectedOutput = 50;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, TemperatureConverter.convertCelsiusToFahrenheit(testInput));
     }
 
     @Test
     void convertFalseCelsiusToFahrenheit() {
-        // testing for 10 Celsius to Fahrenheit
+        // test input in Celsius
         double testInput = 10;
+        // expected output in Fahrenheit
         double expectedOutput = 500;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, TemperatureConverter.convertCelsiusToFahrenheit(testInput));
     }
 
     @Test
     void convertFahrenheitToCelsius() {
-        // testing for 50 Fahrenheit to Celsius
+        // test input in Fahrenheit
         double testInput = 50;
+        // expected output in Celsius
         double expectedOutput = 10;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, TemperatureConverter.convertFahrenheitToCelsius(testInput));
     }
 
     @Test
     void convertFalseFahrenheitToCelsius() {
-        // testing for 50 Fahrenheit to Celsius
+        // test input in Fahrenheit
         double testInput = 50;
+        // expected output in Celsius
         double expectedOutput = 100;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, TemperatureConverter.convertFahrenheitToCelsius(testInput));
     }
     @Test
     void convertCelsiusToKelvin() {
-        // testing for 10 Celsius to Kelvin
+        // test input in Celsius
         double testInput = 10;
+        // expected output in Kelvin
         double expectedOutput = 283.15;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, TemperatureConverter.convertCelsiusToKelvin(testInput));
     }
 
     @Test
     void convertFalseCelsiusToKelvin() {
-        // testing for 10 Celsius to Kelvin
+        // test input in Celsius
         double testInput = 10;
+        // expected output in Kelvin
         double expectedOutput = 200.15;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, TemperatureConverter.convertCelsiusToKelvin(testInput));
     }
 
     @Test
     void convertKelvinToCelsius() {
-        // testing for 283.15 Kelvin to Celsius
+        // test input in Kelvin
         double testInput = 283.15;
+        // expected output in Celsius
         double expectedOutput = 10;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, TemperatureConverter.convertKelvinToCelsius(testInput));
     }
 
     @Test
     void convertFalseKelvinToCelsius() {
-        // testing for 283.15 Kelvin to Celsius
+        // test input in Kelvin
         double testInput = 283.15;
+        // expected output in Celsius
         double expectedOutput = 100;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, TemperatureConverter.convertKelvinToCelsius(testInput));
     }
 
     @Test
     void convertFahrenheitToKelvin() {
-        // testing for 50 Fahrenheit to Kelvin
+        // test input in Fahrenheit
         double testInput = 50;
+        // expected output in Kelvin
         double expectedOutput = 283.15;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, TemperatureConverter.convertFahrenheitToKelvin(testInput));
     }
 
     @Test
     void convertFalseFahrenheitToKelvin() {
-        // testing for 50 Fahrenheit to Kelvin
+        // test input in Fahrenheit
         double testInput = 50;
+        // expected output in Kelvin
         double expectedOutput = 200.15;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, TemperatureConverter.convertFahrenheitToKelvin(testInput));
     }
 
     @Test
     void convertKelvinToFahrenheit() {
-        // testing for 283.15 Kelvin to Fahrenheit
+        // test input in Kelvin
         double testInput = 283.15;
+        // expected output in Fahrenheit
         double expectedOutput = 50;
+        // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, TemperatureConverter.convertKelvinToFahrenheit(testInput));
     }
 
     @Test
     void convertFalseKelvinToFahrenheit() {
-        // testing for 283.15 Kelvin to Fahrenheit
+        // test input in Kelvin
         double testInput = 283.15;
+        // expected output in Fahrenheit
         double expectedOutput = 80;
+        // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, TemperatureConverter.convertKelvinToFahrenheit(testInput));
     }
 }

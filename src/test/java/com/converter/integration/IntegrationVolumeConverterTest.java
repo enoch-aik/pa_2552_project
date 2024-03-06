@@ -14,7 +14,7 @@ public class IntegrationVolumeConverterTest {
         // expected output value in tablespoon
         double expectedOutput = 68;
         // assertion to check if the expected output and the actual output are same
-        assertEquals(VolumeConverter.convertMillilitersToTablespoon(VolumeConverter.convertLitersToMilliliters(testInput)), expectedOutput);
+        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon(VolumeConverter.convertLitersToMilliliters(testInput)));
     }
 
     // test to convert tablespoon to liters
@@ -25,7 +25,7 @@ public class IntegrationVolumeConverterTest {
         // expected output value in liters
         double expectedOutput = 0.02958;
         // assertion to check if the expected output and the actual output are same
-        assertEquals(VolumeConverter.convertMillilitersToLiters(VolumeConverter.convertTablespoonToMilliliters(testInput)), expectedOutput);
+        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToLiters(VolumeConverter.convertTablespoonToMilliliters(testInput)));
     }
 
     // test to convert gallon to milliliters
@@ -36,7 +36,7 @@ public class IntegrationVolumeConverterTest {
         // expected output value in milliliters
         double expectedOutput = 3785.0;
         // assertion to check if the expected output and actual output are same
-        assertEquals(VolumeConverter.convertLitersToMilliliters(VolumeConverter.convertGallonToLiters(testInput)), expectedOutput);
+        assertEquals(expectedOutput, VolumeConverter.convertLitersToMilliliters(VolumeConverter.convertGallonToLiters(testInput)));
     }
 
     // test to convert milliliters to gallon
@@ -47,7 +47,7 @@ public class IntegrationVolumeConverterTest {
         // expected output value in gallon
         double expectedOutput = 0.007926023778071334;
         // assertion to check if the expected output and actual output are same
-        assertEquals(VolumeConverter.convertLitersToGallon(VolumeConverter.convertMillilitersToLiters(testInput)), expectedOutput);
+        assertEquals(expectedOutput, VolumeConverter.convertLitersToGallon(VolumeConverter.convertMillilitersToLiters(testInput)));
     }
 
     // test to convert gallon to tablespoon
@@ -58,7 +58,7 @@ public class IntegrationVolumeConverterTest {
         // expected output in tablespoon
         double expectedOutput = 256;
         // assertion to check if expected output and actual output are same
-        assertEquals(VolumeConverter.convertMillilitersToTablespoon(VolumeConverter.convertLitersToMilliliters(VolumeConverter.convertGallonToLiters(testInput))), expectedOutput);
+        assertEquals(expectedOutput, VolumeConverter.convertMillilitersToTablespoon(VolumeConverter.convertLitersToMilliliters(VolumeConverter.convertGallonToLiters(testInput))));
     }
 
     // test to convert tablespoon to gallon
@@ -69,6 +69,6 @@ public class IntegrationVolumeConverterTest {
         // expected output in gallon
         double expectedOutput = 0.007815059445178334;
         // assertion to check if expected output and actual output are same
-        assertEquals(VolumeConverter.convertLitersToGallon(VolumeConverter.convertMillilitersToLiters(VolumeConverter.convertTablespoonToMilliliters(testInput))), expectedOutput);
+        assertEquals(expectedOutput, VolumeConverter.convertLitersToGallon(VolumeConverter.convertMillilitersToLiters(VolumeConverter.convertTablespoonToMilliliters(testInput))));
     }
 }
