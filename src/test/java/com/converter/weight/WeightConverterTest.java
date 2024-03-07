@@ -97,7 +97,6 @@ class WeightConverterTest {
         assertNotEquals(expectedOutput, WeightConverter.convertGramsToMilligrams(testInput));
     }
 
-    @Test
     void convertFalseGramsToMilligrams() {
         // test input in grams
         double testInput = 10;
