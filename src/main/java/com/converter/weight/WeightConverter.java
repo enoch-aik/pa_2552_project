@@ -24,12 +24,12 @@ public class WeightConverter {
     }
 
     //convert pounds to grams
-    public static double convertPoundsToGrams(double pounds) {
-        return pounds * ConverterConstants.POUND_GRAM_UNIT;
+    public static double convertGramsToMilligrams(double pounds) {
+        return pounds * ConverterConstants.GRAM_MILLIGRAM_UNIT;
     }
 
     //convert grams to pounds
-    public static double convertGramsToPounds(double grams) {
-        return grams / ConverterConstants.POUND_GRAM_UNIT;
+    public static double convertMilligramsToGrams(double grams) {
+        return grams / ConverterConstants.GRAM_MILLIGRAM_UNIT;
     }
 }

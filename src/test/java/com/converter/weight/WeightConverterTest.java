@@ -88,23 +88,23 @@ class WeightConverterTest {
     }
 
     @Test
-    void convertPoundsToGrams() {
-        // test input in pounds
+    void convertGramsToMilligrams() {
+        // test input in grams
         double testInput = 10;
-        // expected output in grams
-        double expectedOutput = 4535.92;
+        // expected output in milligrams
+        double expectedOutput = 10000;
         // assertion statement to check if expected output and actual output are same
-        assertEquals(expectedOutput, WeightConverter.convertPoundsToGrams(testInput));
+        assertEquals(expectedOutput, WeightConverter.convertGramsToMilligrams(testInput));
     }
 
     @Test
-    void convertFalsePoundsToGrams() {
-        // test input in pounds
+    void convertFalseMilligramsToGrams() {
+        // test input in milligrams
         double testInput = 10;
         // expected output in grams
         double expectedOutput = 45.92;
         // assertion statement to check if expected output and actual output are not same
-        assertNotEquals(expectedOutput, WeightConverter.convertPoundsToGrams(testInput));
+        assertNotEquals(expectedOutput, WeightConverter.convertGramsToMilligrams(testInput));
     }
 
  /*   @Test
@@ -118,12 +118,12 @@ class WeightConverterTest {
     }
 */
     @Test
-    void convertFalseGramsToPounds() {
+    void convertFalseGramsToMilligrams() {
         // test input in grams
         double testInput = 10;
         // expected output in pounds
         double expectedOutput = 10.022046244201837775;
         // assertion statement to check if expected output and actual output are not same
-        assertNotEquals(expectedOutput, WeightConverter.convertGramsToPounds(testInput));
+        assertNotEquals(expectedOutput, WeightConverter.convertMilligramsToGrams(testInput));
     }
 }

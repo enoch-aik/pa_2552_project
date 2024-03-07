@@ -146,25 +146,25 @@ public class ConverterUserInterface {
                         double kilograms = WeightConverter.convertGramsToKilograms(grams);
                         JOptionPane.showMessageDialog(null, grams + " grams is equal to " + kilograms + " kilograms", "Weight Converter", JOptionPane.INFORMATION_MESSAGE);
                     }
-                    case "Pound to Gram" -> {
-                        String input = JOptionPane.showInputDialog(null, "Enter the value in pounds", "Weight Converter", JOptionPane.QUESTION_MESSAGE);
+                    case "Gram to Milligram" -> {
+                        String input = JOptionPane.showInputDialog(null, "Enter the value in gram", "Weight Converter", JOptionPane.QUESTION_MESSAGE);
                         if (input == null) {
                             System.exit(0);
                             return;
                         }
-                        double pounds = Double.parseDouble(input);
-                        double grams = WeightConverter.convertPoundsToGrams(pounds);
-                        JOptionPane.showMessageDialog(null, pounds + " pounds is equal to " + grams + " grams", "Weight Converter", JOptionPane.INFORMATION_MESSAGE);
+                        double gram = Double.parseDouble(input);
+                        double milligrams = WeightConverter.convertGramsToMilligrams(gram);
+                        JOptionPane.showMessageDialog(null, gram + " gram is equal to " + milligrams + " milligrams", "Weight Converter", JOptionPane.INFORMATION_MESSAGE);
                     }
-                    case "Gram to Pound" -> {
-                        String input = JOptionPane.showInputDialog(null, "Enter the value in grams", "Weight Converter", JOptionPane.QUESTION_MESSAGE);
+                    case "Milligram to Gram" -> {
+                        String input = JOptionPane.showInputDialog(null, "Enter the value in milligrams", "Weight Converter", JOptionPane.QUESTION_MESSAGE);
                         if (input == null) {
                             System.exit(0);
                             return;
                         }
-                        double grams = Double.parseDouble(input);
-                        double pounds = WeightConverter.convertGramsToPounds(grams);
-                        JOptionPane.showMessageDialog(null, grams + " grams is equal to " + pounds + " pounds", "Weight Converter", JOptionPane.INFORMATION_MESSAGE);
+                        double milligrams = Double.parseDouble(input);
+                        double gram = WeightConverter.convertMilligramsToGrams(milligrams);
+                        JOptionPane.showMessageDialog(null, milligrams + " milligrams is equal to " + gram + " grams", "Weight Converter", JOptionPane.INFORMATION_MESSAGE);
                     }
                 }
 
