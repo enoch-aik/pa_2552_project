@@ -92,7 +92,7 @@ class WeightConverterTest {
         // test input in grams
         double testInput = 10;
         // expected output in milligrams
-        double expectedOutput = 4535.92;
+        double expectedOutput = 10000;
         // assertion statement to check if expected output and actual output are same
         assertEquals(expectedOutput, WeightConverter.convertGramsToMilligrams(testInput));
     }
