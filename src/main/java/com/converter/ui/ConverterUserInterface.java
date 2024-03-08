@@ -33,7 +33,7 @@ public class ConverterUserInterface {
                     return;
                 }
                 String selectedConverter = converterOption.toString();
-                switch (selectedConverter) {/*
+                switch (selectedConverter) {
                     case "Meter to Feet" -> {
                         String input = JOptionPane.showInputDialog(null, "Enter the value in meters", "Length Converter", JOptionPane.QUESTION_MESSAGE);
                         if (input == null) {
@@ -93,7 +93,7 @@ public class ConverterUserInterface {
                         double centimeters = Double.parseDouble(input);
                         double meters = LengthConverter.convertCentimetersToMeters(centimeters);
                         JOptionPane.showMessageDialog(null, centimeters + " centimeters is equal to " + meters + " meters", "Length Converter", JOptionPane.INFORMATION_MESSAGE);
-                    }*/
+                    }
                 }
 
 
