@@ -20,7 +20,7 @@ class LengthConverterTest {
         // test input in meters
         double testInput = 10;
         // expected output in feet
-        double expectedOutput = 323;
+        double expectedOutput = 32;
         // assertion statement to check if expected output and actual output are not same
         assertNotEquals(expectedOutput, LengthConverter.convertMetersToFeet(testInput));
     }
