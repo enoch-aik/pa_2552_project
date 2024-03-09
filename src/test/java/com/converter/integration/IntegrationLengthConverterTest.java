@@ -5,7 +5,7 @@ import com.converter.length.LengthConverter;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //This file is used to run integration test for the length converter
-/*
+
 class IntegrationLengthConverterTest {
 
     //test to convert feet to inches
@@ -73,4 +73,4 @@ class IntegrationLengthConverterTest {
         //assertion to check if the expected output and the actual output are same
         assertEquals(expectedOutput, LengthConverter.convertMetersToCentimeters(LengthConverter.convertInchesToMeters(testInput)));
     }
-}*/
+}
